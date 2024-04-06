@@ -33,7 +33,6 @@ export default function Header() {
             <div className='Authbutton'>
                 {/* Renderiza el componente AuthButton */}
                 {renderAuthButton()}
-                
             </div>
         </header>
     );

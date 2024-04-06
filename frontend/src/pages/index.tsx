@@ -3,6 +3,7 @@ import Header from './components/Header';
 import UnLogged from './components/UnLogged';
 import Logged from './components/Logged';
 import Error from './components/Error';
+import Info from './components/Info';
 import { useRestActor } from "@bundly/ares-react";
 import '../app/index.css';
 
@@ -35,8 +36,9 @@ export default function IcConnectPage() {
     return (
         <div className='Container1'>
             <Header />
+            <Info />
             <div className='Loggedin'>
-            {isLoggedIn === null ? <Error /> : isLoggedIn ? <Logged /> : <UnLogged />}
+                {isLoggedIn === null ? <Error /> : isLoggedIn ? <Logged /> : <UnLogged />}
             </div>
         </div>
     );
