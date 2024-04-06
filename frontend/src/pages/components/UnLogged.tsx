@@ -1,5 +1,5 @@
 export default function UnLogged(){
     return(
-        <h1>No estás logueado</h1>
+        <h1>You are not logged</h1>
     );
 }

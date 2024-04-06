@@ -31,8 +31,6 @@ export default function IcConnectPage() {
         checkLoginStatus();
     }, [backend]); // Agregamos backend a la lista de dependencias de useEffect
 
-    console.log(isLoggedIn);
-
     return (
         <div className='Container1'>
             <Header />
